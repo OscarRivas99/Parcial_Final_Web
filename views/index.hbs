@@ -1,0 +1,37 @@
+<div class="container"> 
+  <div class="text-center">
+    <img src="/1.png" width="200"  height="200" >
+    </div>
+    <br>     
+    <div class="row">
+    <br>
+     
+    <a href="/fruta/nuevo" class="btn btn-primary mb-4 ">Nuevo</a>
+      <table class="table table-striped">
+        <br>
+        <thead>
+        <tr>
+            <th>Tipo de Alimento</th>
+            <th>Nombre de la fruta</th>
+            <th>Peso (g) </th>
+            <th>Color de la fruta</th>
+            <th>Crece en Arboles?</th>
+            <th>Calorias</th>
+            <th colspan="2">Operación</th>
+        </tr>
+        </thead>
+        {{#each frutas}}
+          <tr>
+            <td>{{this.tipo}}</td> 
+            <td>{{this.nombre}}</td> 
+            <td>{{this.peso}}</td>
+            <td>{{this.color}}</td>
+            <td>{{this.arboles}}</td> <!--modificado -->
+            <td>{{this.calorias}}</td>
+            <td><a href="/fruta/modificar/{{this._id}}">Modificar</a></td> 
+            <td><a href="/fruta/eliminar/{{this._id}}">Eliminar</a></td> 
+          </tr>          
+       {{/each}}   
+      </table>
+    </div>
+</div>

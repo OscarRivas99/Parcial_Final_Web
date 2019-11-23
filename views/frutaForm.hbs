@@ -1,0 +1,49 @@
+<div class="container">
+    <br/>
+    <div class="text-center">
+    <img src="/1.png" width="200"  height="200" ><br>
+    </div>
+    <form action="/frutaForm/fruta/operar" method="POST">
+        <input type="hidden" name="_id" value="{{fruta._id}}"/>
+        
+        <div class="form-group">
+            <label for="tipo">Seleccione el tipo de alimento:</label>
+            <select name="tipo" class="form-control" id="type_field">
+                <option>Fruta</option>
+                <option>Verdura</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="Nombre">Nombre:</label>
+            <input type="nombre" class="form-control" id="nombre" name="nombre" value="{{fruta.nombre}}">
+        </div>
+        <div class="form-group">
+            <label for="peso">Peso:</label>
+            <input type="text" class="form-control" id="peso" name="peso" value="{{fruta.peso}}">
+        </div>
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="text" class="form-control" id="color" name="color" value="{{fruta.color}}">
+        </div>
+
+       
+         <div class="form-group">
+             <label for="arboles">Crece en arboles?:</label>
+             <input type="checkbox" name="arboles" value="Si"> Si
+             <input type="checkbox" name="arboles" value="No"> No
+         </div>
+         <!--
+        <div class="form-group">
+            <label for="peso">Crece en Arboles?:</label>
+            <input type="text" class="form-control" id="crece_en_arboles" name="crece_en_arboles" value="{{fruta.crece_en_arboles}}">
+        </div>
+        -->
+        <div class="form-group">
+            <label for="calorias">Calorias:</label>
+            <input type="number" class="form-control" id="calorias" name="calorias" value="{{fruta.calorias}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+        <a href="/" class="btn btn-danger">Cancelar</a>
+    </form>
+</div>
