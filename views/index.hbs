@@ -28,8 +28,8 @@
             <td>{{this.color}}</td>
             <td>{{this.arboles}}</td> <!--modificado -->
             <td>{{this.calorias}}</td>
-            <td><a href="/fruta/modificar/{{this._id}}">Modificar</a></td> 
-            <td><a href="/fruta/eliminar/{{this._id}}">Eliminar</a></td> 
+            <td> <i class="fa fa-pencil fa-lg" aria-hidden="true"></i> <a href="/fruta/modificar/{{this._id}}">  Modificar</a></td> 
+            <td><i class="fa fa-trash fa-lg" aria-hidden="true"></i><a href="/fruta/eliminar/{{this._id}}">  Eliminar</a></td> 
           </tr>          
        {{/each}}   
       </table>

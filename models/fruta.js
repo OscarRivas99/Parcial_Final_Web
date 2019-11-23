@@ -1,6 +1,7 @@
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
+
 let frutaSchema = new Schema({
     id: { type: String },
     tipo:{ type: String},

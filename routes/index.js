@@ -37,4 +37,5 @@ router.get('/fruta/eliminar/:id', (req, res, next) => {
   });
 });
 
+
 module.exports = router;
